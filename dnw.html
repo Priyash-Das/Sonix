@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Assets/sonixlogo.png">
         <title>Download Status</title>
+        <link rel="stylesheet" href="style_faq.css">
         <style>
     body {
         margin: 0;
@@ -11,25 +13,75 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: linear-gradient(135deg, #0B1220, #111827);
         font-family: 'Segoe UI', sans-serif;
         text-align: center;
         padding: 20px;
     }
 
     .message {
-        font-size: 35px;
-        font-weight: bold;
-        color: #3ddbff;
-        text-shadow: 0 0 20px rgba(61, 220, 255, 0.5);
+        font-size: 30px;
+        color: #62d5ff;
+        text-shadow: 0 0 10px rgba(61, 74, 255, 0.5);
+    }
+
+    .btn {
+        position: relative;
+        padding: 0.5em 2em;
+        font-weight: 600;
+        border: 2px solid #62d5ff;
+        color: #62d5ff;
+        text-decoration: none;
+        display: inline-block;
+        align-self: flex-end;
+        letter-spacing: 1px;
+        overflow: hidden;
+    }
+
+    .btn span {
+        position: relative;
+        z-index: 1;
+    }
+
+    .btn::before {
+        content: '';
+        position: absolute;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: #62d5ff;
+        transition: 1s;
+    }
+
+    .btn:hover::before {
+        width: 390px;
+        height: 390px;
+    }
+
+    .btn:hover {
+        color: #0c0d12;
+        box-shadow: 0 0 5px #62d5ff, 0 0 10px #62d5ff;
+        font-weight: 600;
     }
         </style>
     </head>
     <body>
-        <div class="message">
-            ⚠️ Sorry, unable to download the app.
+        <div class="body-bg"></div>
+        <div class="accent-shape-1"></div>
+        <div class="accent-shape-2"></div>
+        <div class="accent-shape-3"></div>
+        <div class="content-wrapper">
+            <div class="message">
+                ⚠️ Sorry, unable to download the app.
+                <br>
+                The application has not been released yet. Please stay tuned for updates.
+            </div>
             <br>
-            The application has not been released yet. Please stay tuned for updates.
+            <div class="button-group">
+                <a href="index.html" target="_blank" class="btn">
+                    <span>Home</span>
+                </a>
+            </div>
         </div>
     </body>
 </html>
