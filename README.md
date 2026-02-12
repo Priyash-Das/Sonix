@@ -1,3 +1,3 @@
 # Sonix
 
-> Explore [>-   click here  -<](https://priyash-das.github.io/Sonix/)
+> Explore [| >-   click here / Visit  -< |](https://priyash-das.github.io/Sonix/)
